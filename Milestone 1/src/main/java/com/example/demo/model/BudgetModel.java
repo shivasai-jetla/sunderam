@@ -3,15 +3,13 @@ package com.example.demo.model;
 public class BudgetModel {
 	private Integer userId;
 	private String category;
-	private double price;
 	private Integer months;
 	private double amount;
 	
-	public BudgetModel(Integer userId, String category, double price, Integer months, double amount) {
+	public BudgetModel(Integer userId, String category, Integer months, double amount) {
 		super();
 		this.userId = userId;
 		this.category = category;
-		this.price = price;
 		this.months = months;
 		this.amount = amount;
 	}
@@ -27,12 +25,6 @@ public class BudgetModel {
 	}
 	public void setCategory(String category) {
 		this.category = category;
-	}
-	public double getPrice() {
-		return price;
-	}
-	public void setPrice(double price) {
-		this.price = price;
 	}
 	public Integer getMonths() {
 		return months;
